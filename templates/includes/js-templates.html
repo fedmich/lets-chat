@@ -20,6 +20,14 @@
     <script type="text/x-handlebars-template" id="template-room">
         <div class="lcb-room lcb-pane lcb-pane-{{id}}" data-id="{{id}}" style="display: none;">
             <div class="lcb-room-chat ">
+                <div class="lcb-room-header">
+                    <div class="lcb-room-meta">
+                        <h2 class="lcb-room-heading" placeholder="Room Name...">{{name}}</h2>
+                        <div class="lcb-room-description" placeholder="Description...">
+                            <p>{{description}}</p>
+                        </div>
+                    </div>
+                </div><!-- lcb-room-sidebar end -->
                 <ul class="lcb-messages">
                     <li class="lcb-message">
                         <img class="lcb-message-avatar" src="https://www.gravatar.com/avatar/2de4d847ef9524b0b5058c68f0826b2e?s=30" />

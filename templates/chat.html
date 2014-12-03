@@ -25,14 +25,7 @@
 
 {% block body %}
     <div id="lcb-client" class="lcb-client">
-        <header class="lcb-header">
-            <ul class="lcb-tabs">
-                <li data-id="list" class="lcb-tab lcb-tab-home">
-                    <a href="#!/">
-                        <i class="fa fa-th"></i>
-                    </a>
-                </li>
-            </ul>
+        <section class="lcb-sidebar offcanvas-xs">
             <span class="lcb-header-actions">
                 <span class="lcb-status-indicators">
                     <span class="lcb-status-indicator lcb-status-indicator-error lcb-status-connection" data-status="disconnected" style="display: none;">
@@ -56,7 +49,14 @@
                     #}
                 </span>
             </span>
-        </header>
+            <ul class="lcb-tabs">
+                <li data-id="list" class="lcb-tab lcb-tab-home">
+                    <a href="#!/">
+                        <i class="fa fa-th"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
         <section class="lcb-panes">
             <div class="lcb-rooms-browser lcb-pane" data-id="list" style="display: none;">
                 {% include 'includes/add-room-modal.html' %}
